@@ -39,48 +39,48 @@ nav ul li {
 nav ul li a {
   color: #fff; /* linkkien väri */
   text-decoration: none; /*poisttaa linkkien alleviivauksen*/
-  padding: 0.5rem 1rem; /* Lisää tyhjää tilaa linkin sisään (ylä/ala ja sivuille) */
-  position: relative; /* Mahdollistaa ::after-pseudoelementin sijoittelun linkin sisälle */
-  transition: color 0.3s; /* Lisää animaation, joka muuttaa värin 0.3 sekunnissa */
+  padding: 0.5rem 1rem;
+  position: relative;
+  transition: color 0.3s;
 }
 
 nav ul li a:hover {
-  color: #f0f0f0; /* Muuttaa linkin värin vaaleammaksi, kun hiiri on sen päällä */
+  color: #f0f0f0;
 }
 
 nav ul li a.active {
-  color: #ffd700; /* Korostaa aktiivisen linkin värillä kullanväriseksi */
+  color: #ffd700; 
 }
 
 nav ul li a.active::after {
-  content: ''; /* Lisää tyhjän sisältöelementin */
-  position: absolute; /* Sijoittaa elementin suhteessa linkin sisään */
-  left: 50%; /* Asettaa elementin keskelle vaakasuunnassa */
-  transform: translateX(-50%); /* Korjaa sijainnin tarkasti keskelle */
-  bottom: -5px; /* Asettaa elementin 5 pikseliä linkin alapuolelle */
-  width: 50%; /* Tekee elementistä 50 % linkin leveydestä */
-  height: 2px; /* Asettaa elementin korkeudeksi 2 pikseliä */
-  background-color: #ffd700; /* Asettaa elementin väriksi kullanvärisen */
-  border-radius: 2px; /* Pyöristää elementin kulmia */
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -5px;
+  width: 50%;
+  height: 2px;
+  background-color: #ffd700;
+  border-radius: 2px;
 }
 
 .social-media-links {
-  display: flex; /* Ottaa käyttöön joustavien elementtien layoutin */
-  gap: 1rem; /* Lisää yhden rem-välin sosiaalisen median kuvakkeiden väliin */
+  display: flex;
+  gap: 1rem;
 }
 
 .social-icon {
-  width: 30px; /* Asettaa sosiaalisen median kuvakkeen leveydeksi 30 pikseliä */
-  height: 30px; /* Asettaa sosiaalisen median kuvakkeen korkeudeksi 30 pikseliä */
+  width: 30px;
+  height: 30px;
 }
 
 .social-icon img {
-  width: 100%; /*kuvan leveys*/
-  height: 100%; /* Skaalaa kuvan täyttämään kuvakkeen korkeus */
-  object-fit: contain; /* Varmistaa, että kuva säilyttää mittasuhteensa */
-  transition: transform 0.3s ease; /* Lisää sujuvan animaation skaalaamiseen */
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
 }
 
 .social-icon:hover img {
-  transform: scale(1.1); /* Suurentaa kuvan kokoa hieman, kun hiiri on sen päällä */
+  transform: scale(1.1); /*suurentaa kuvaa kuin hoveraa*/
 }
