@@ -1,0 +1,86 @@
+nav {
+  background-image: linear-gradient(to bottom, #000000, #353535); /*vaihtaa navbarin tausta värin*/
+  padding: 1.5rem; /*Lisää tyhjää tilaa navbarin ympärille*/
+  display: flex; /*lisää ominaisuuksia*/
+  align-items: center; /*esittää painikkeet samalla rivill' kuin firman logo*/
+  justify-content: space-between; /*levittää painikkeet*/
+}
+
+.logo {
+  display: flex; /*lisää ominaisuuksia*/
+  align-items: center; /*laittaa pystysuunnassa keskelle*/
+}
+
+nav img {
+  height: 95px; /*kuvan korkeus*/
+  margin-right: 10px; /*logon kuvan ja tekstin väliin hajurako*/
+}
+
+.logoText {
+  font-size: 2.0em; /*fonttikoko */
+  font-weight: bold; /*muuntaa tekstistä lihavoidun*/
+  color: gold; /*tekstin väri*/
+  letter-spacing: 1px; /*kirjainten välillä olevan välinkoko*/
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /*varjostus tekstille*/
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex; /*esittää listan rivinä*/
+  gap: 1.5rem; /*lisää väliä buttoneiden välille*/
+  margin: 0; /*ulkomarginaali*/
+  padding: 0; /*sisämarginaali */
+}
+
+nav ul li {
+  font-size: 1.2rem; /* listakohteiden fonttikoko*/
+}
+
+nav ul li a {
+  color: #fff; /* linkkien väri */
+  text-decoration: none; /*poisttaa linkkien alleviivauksen*/
+  padding: 0.5rem 1rem; /* Lisää tyhjää tilaa linkin sisään (ylä/ala ja sivuille) */
+  position: relative; /* Mahdollistaa ::after-pseudoelementin sijoittelun linkin sisälle */
+  transition: color 0.3s; /* Lisää animaation, joka muuttaa värin 0.3 sekunnissa */
+}
+
+nav ul li a:hover {
+  color: #f0f0f0; /* Muuttaa linkin värin vaaleammaksi, kun hiiri on sen päällä */
+}
+
+nav ul li a.active {
+  color: #ffd700; /* Korostaa aktiivisen linkin värillä kullanväriseksi */
+}
+
+nav ul li a.active::after {
+  content: ''; /* Lisää tyhjän sisältöelementin */
+  position: absolute; /* Sijoittaa elementin suhteessa linkin sisään */
+  left: 50%; /* Asettaa elementin keskelle vaakasuunnassa */
+  transform: translateX(-50%); /* Korjaa sijainnin tarkasti keskelle */
+  bottom: -5px; /* Asettaa elementin 5 pikseliä linkin alapuolelle */
+  width: 50%; /* Tekee elementistä 50 % linkin leveydestä */
+  height: 2px; /* Asettaa elementin korkeudeksi 2 pikseliä */
+  background-color: #ffd700; /* Asettaa elementin väriksi kullanvärisen */
+  border-radius: 2px; /* Pyöristää elementin kulmia */
+}
+
+.social-media-links {
+  display: flex; /* Ottaa käyttöön joustavien elementtien layoutin */
+  gap: 1rem; /* Lisää yhden rem-välin sosiaalisen median kuvakkeiden väliin */
+}
+
+.social-icon {
+  width: 30px; /* Asettaa sosiaalisen median kuvakkeen leveydeksi 30 pikseliä */
+  height: 30px; /* Asettaa sosiaalisen median kuvakkeen korkeudeksi 30 pikseliä */
+}
+
+.social-icon img {
+  width: 100%; /*kuvan leveys*/
+  height: 100%; /* Skaalaa kuvan täyttämään kuvakkeen korkeus */
+  object-fit: contain; /* Varmistaa, että kuva säilyttää mittasuhteensa */
+  transition: transform 0.3s ease; /* Lisää sujuvan animaation skaalaamiseen */
+}
+
+.social-icon:hover img {
+  transform: scale(1.1); /* Suurentaa kuvan kokoa hieman, kun hiiri on sen päällä */
+}

@@ -1,0 +1,69 @@
+.Yhteytta-container {
+  background: linear-gradient(to bottom, rgb(119, 26, 26), rgb(133, 92, 92)); /* taustaväri */
+  min-height: 85vh; /* background coloria varten, peittää valkoisen osan sivun alhaalta. */
+  display: flex; /*background coloria varten, peittää valkoisen osan sivun ylhäältä.*/
+  flex-direction: column; /* jotta kuvat näkyvät samalla rivillä ja järkevästi */
+}
+
+
+h2 {
+  text-align: center; /* yläotsikon fontin keskitys */
+  font-size: 2.5rem; /* yläotsikon fontin koko*/
+  color: #f4a261; /* otsikon väri */
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px #000; /* otsikon varjo */
+}
+
+.image-row {
+  display: flex; /* jottei mene alekkain*/
+  justify-content: space-around; /* keskitys sivun keskelle, ettei halaa vasenta reunaa*/
+  margin-top: 20px; /* boksien haju rako yläotsikosta*/
+  gap: 20px; /* boksien haju rako toisistaan */
+}
+
+.image-item {
+  background-color: #2a2a2a; /* boksin tausta väri */
+  border: 1px solid #444; /* varjo boksin ympärillä */
+  text-align: center; /* tekstin keskitys boksin sisällä */
+  width: 29%; /* boksien leveys */
+  padding: 20px; /* luoo ylimääräistä tilaa boksien ympärykselle, jottei näytä tyhmältä.*/
+  border-radius: 8px; /* kulmien pyöristys */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* jotta hoveri boksin päälle on smoothi, eikä vain snäppää */
+}
+
+.image-item:hover {
+  transform: scale(1.05); /* zoomaa, kuin hoveraa */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 1); /* varjo, kuin hoveraa */
+}
+
+.image-item h3 {
+  margin-bottom: 10px; /* nimen ja kuvan välinen haju rako*/
+  font-size: 1.5rem; /* nimien koko*/
+  color: #f4a261; /* nimen värit */
+  text-shadow: 1px 1px 3px #000; /* varjo nimien ympärille */
+}
+
+.image-row img {
+  width: 90%; /* kuvan koko */
+  height: 300px; /* kuvan pituus */
+  object-fit: cover; /* jottei ole stretchiä*/
+  margin-bottom: 10px; /* kuvan ja leipätekstin haju rako*/
+  border: 3px solid #e63946; /* kuvan ympärille muodostuu ääriviivat*/
+  border-radius: 6px; /* kuvan reunojen pyöristys */
+}
+
+.image-item p {
+  margin-top: 10px; /* leipätekstien välillä olevat haju raot*/
+  font-size: 18px; /* leipätekstin fontin koko*/
+  color: #ccc; /* väri leipätekstille */
+}
+
+a {
+  color: #f4a261; /*email osoitteiden väri*/
+  text-decoration: none; /* jottei näy email osotteiden alla viivaa*/
+  transition: color 0.4s ease; /* email väri muuttuu, kuin hoveraa 0.4 sekunnissa.*/
+}
+
+a:hover {
+  color: #e63946; /* Kuin hoveraa email osoitteen päällä, niin väri vaihtuu*/
+}

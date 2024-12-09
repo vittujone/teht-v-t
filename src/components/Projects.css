@@ -1,0 +1,35 @@
+.projectsContainer {
+    text-align: center; /*Keskittää yläotsikon*/
+    padding: 20px; /*Luo tyhjää tilaa boksien ympärille*/
+  }
+  
+  .projectGrid {
+    display: grid; /*Esittää projektit samalla tasolla*/
+    grid-template-columns: 1fr 1fr; /*tekee että kummatkin gridit vie yhtä paljon tilaa */
+    gap: 20px; /*luo tilaa boksien ympärille*/
+  }
+  
+  .projectCard {
+    background-color: #f9edfc; /*gridien taustaväri*/
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /*Varjostus */
+    transition: transform 0.2s, box-shadow 0.2s; /*smooth hover effect*/
+  }
+  
+  .projectImage { /*projektien kuvat*/
+    width: 60%; /*leveys*/
+    height: auto; /*korkeus*/
+  }
+  
+  .projectCard h3 { /*projektien nimi*/
+    font-size: 1.5em;
+    color: #333;
+  }
+  
+  .projectCard p { /*leipäteksti*/
+    color: #555; 
+    line-height: 1.5em;
+  }
+  
+  .projectCard:hover { /*hover effektejä*/
+    transform: translateY(-5px); /*liikkuu ylöspäin*/
+  }
