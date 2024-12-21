@@ -1,28 +1,28 @@
 .aboutContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 60px;
-  background: linear-gradient(135deg, #222, #444);
-  color: #f2f2f2;
-  max-width: 800px;
-  margin: 0 auto;
-  border-radius: 10px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  min-height: 400px;
+  display: flex; /*flex muotoilu*/
+  flex-direction: column; /*muotoilee kolumniin*/
+  justify-content: center; /*keskitys pysty*/
+  align-items: center; /*keskitys vaaka*/
+  text-align: center; /*tekstin keskitys*/
+  padding: 60px; /*tyhjä tila containerin ympärille*/
+  background: linear-gradient(135deg, #222, #444); /*container taustaväri*/
+  color: #f2f2f2; /*leipäteksti*/
+  max-width: 800px; /*maksimi leveys*/
+  margin: 0 auto; /*kesottaa containerin vaakaan*/ 
+  border-radius: 10px; /*pyöristää kulmat*/
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /*varjostus*/
+  min-height: 400px; /*minimi korkeus*/
 }
 
 .aboutContainer h1 {
-  font-size: 2.5em;
-  margin-bottom: 20px;
-  color: #ffd700;
+  font-size: 2.5em; /*otsikko fonttikoko*/
+  margin-bottom: 20px; /*leipätekstin, otsikon väli*/
+  color: #ffd700; /*otsikon väri*/
 }
 
 .aboutIntro {
-  font-size: 1.2em;
-  line-height: 1.8em;
-  margin-bottom: 40px;
-  max-width: 600px;
+  font-size: 1.2em; /*leipätekstin koko*/
+  line-height: 1.8em; /*leipätekstien riviväli*/
+  margin-bottom: 40px; /*luoo tyhjää tilaa alas*/
+  max-width: 600px; /*maks. leveys*/
 }

@@ -1,52 +1,52 @@
 .homeContainer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 80vh;
-  padding: 20px;
-  background: linear-gradient(135deg, #ffffff, #ffffff);
-  color: gold;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  display: flex; /*flexbox muotoilu, järjestää vaakasunnassa*/
+  justify-content: space-between; /* jättää saman verran väliä*/
+  align-items: center; /*kohdistaa pystysuunassa keskelle*/
+  height: 80vh; /*containerin korkeus*/
+  padding: 20px; /*tyhjä alue ympärille*/
+  background: linear-gradient(135deg, #ffffff, #ffffff); /*taustaväri*/
+  color: gold; /*tekstiväri*/
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /*varjo*/
 }
 
 .leftSide, .rightSide {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: flex; /*display muotoilu*/
+  flex-direction: column; /*kolumni*/
+  justify-content: center; /*sisäiset elementit pystysuunassa keskelle*/
 }
 
 .leftSide {
-  width: 40%;
-  padding-right: 20px;
+  width: 40%; /*leveys*/
+  padding-right: 20px; /*tyhjä tila*/
 }
 
 .rightSide {
-  width: 55%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+  width: 55%; /*leveys*/
+  display: flex; /*flexbox muotoilu*/
+  justify-content: center; /*sisällön keskitys*/
+  flex-direction: column; /*kolumni, pystysuunta*/
 }
 
 .leftSide h1, .rightSide h1 {
-  font-size: 2.5em;
-  margin: 0;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  letter-spacing: 2px;
+  font-size: 2.5em; /*otsikon fonttikoko*/
+  margin: 0; /*poistaa oletus margin*/
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /*varjostus*/
+  letter-spacing: 2px; /*kirjainten väli*/
 }
 
 .leftSide h1 {
-  margin-top: -360px;
+  margin-top: -360px; /*otsikkoa ylöspäin*/
 }
 
 .leftSide p {
-  font-size: 1.2em;
-  line-height: 1.6;
+  font-size: 1.2em; /*leipätekstin fonttikoko*/
+  line-height: 1.6; /*riviväli*/
 }
 
 .rightSide iframe {
-  width: 80%;
-  max-width: 800px;
-  height: 450px;
-  border: none;
-  margin-top: 20px;
+  width: 80%; /*videon leveys*/
+  max-width: 800px; /*maksimi leveys*/
+  height: 450px; /*korkeus*/
+  border: none; /*poistaa ääriviivat*/
+  margin-top: 20px; /*tyhjä tila päälle*/
 }
